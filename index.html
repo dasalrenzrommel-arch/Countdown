@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+</head>
+<body>
+
+    <h2>Countdown</h2>
+
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="countdown()">Start</button>
+
+    <div id="result"></div>
+
+    <script>
+        function countdown() {
+            let num = Number(document.getElementById("number").value);
+            let result = "";
+
+            for (let i = num; i >= 1; i--) {
+                result += i + "<br>";
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
